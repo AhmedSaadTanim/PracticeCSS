@@ -26,18 +26,14 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](http://127.0.0.1:5500/Practice1/index.html)
-- Live Site URL: [Add live site URL here](http://127.0.0.1:5500/Practice1/index.html)
+- Solution URL: [Click here](http://127.0.0.1:5500/Practice1/index.html)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
