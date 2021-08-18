@@ -14,8 +14,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](http://127.0.0.1:5500/Practice1/index.html)
+- Solution URL: [Click here](https://ahmedsaadtanim.github.io/PracticeCSS/Practice1/)
 
 ## My process
 
@@ -50,4 +48,4 @@ Getting comfortable with the syntaxes and learning more new things like css grid
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AhmedSaadTanim)
+- Frontend Mentor - [AhmedSaadTanim](https://www.frontendmentor.io/profile/AhmedSaadTanim)
