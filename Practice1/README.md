@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://ahmedsaadtanim.github.io/PracticeCSS/Practice1/)
+- Solution URL: [Solution](https://ahmedsaadtanim.github.io/PracticeCSS/Practice1/)
 
 ## My process
 
