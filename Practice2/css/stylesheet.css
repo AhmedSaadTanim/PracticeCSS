@@ -1,0 +1,160 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+}
+.background{
+    background-color: hsl(225, 100%, 94%);
+    position: absolute;
+    height:100vh;
+    width: 100%;
+}
+
+.background .bg-image img{
+    width: 100%;
+}
+.card{
+    position: absolute;
+    align-self: center;
+    z-index: 99;
+    background-color:white;
+    border-radius: 12px;
+    height: 680px;
+    width: 450px;
+    box-shadow: 5px 2px 20px hsla(224, 38%, 66%, 0.603);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.card h1{
+    margin-top: 50px;
+    font-family: luc;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.card span{
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 70px 0px 70px;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+.card #boxes{
+    width: 350px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 900;
+}
+.card .plan{
+    background-color:hsl(225, 100%, 98%);
+    height: 100px;
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2 box4"
+    "box1 box3 box4";
+}
+.card .plan img{
+    width: fit-content;
+}
+.plan .logo{
+    grid-area: box1;
+    align-self: center;
+}
+.plan .text-1{
+    align-self: center;
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-top: 20px;
+    grid-area: box2;
+}
+.plan .text-2{
+    align-self: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+    grid-area: box3;
+}
+.plan .change-plan{
+    align-self: center;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+    justify-self: end;
+    padding-right: 25px;
+    grid-area: box4;
+}
+.plan .change-plan:hover{
+    color: hsla(245, 75%, 52%, 0.678);
+    text-decoration: none;
+    cursor: pointer;
+}
+.card .checkout{
+    background-color: hsl(245, 75%, 52%);
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+    box-shadow: 2px 20px 15px hsla(245, 75%, 52%, 0.219);
+}
+.card .checkout:hover{
+    background-color: hsla(245, 75%, 52%, 0.678);
+    cursor: pointer;
+}
+.card .cancel-order{
+    color:hsl(224, 23%, 55%);
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+.card .cancel-order:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.attribution{
+    position: absolute;
+    left: 43.1%;
+    bottom: 1%;
+}
+@media only screen and (max-width: 375px){
+    .card{
+        width: 325px;
+        height: 580px;
+    }
+    .card h1{
+        margin-top: 30px;
+    }
+    .card span{
+        margin: 20px 25px 0px 25px;
+    }
+    .card #boxes{
+        width: 280px;
+    }
+    .card .plan{
+        height: 80px;
+        grid-template-columns: 25% 35% 40%;
+    }
+    .attribution{
+        left: 15%;
+    }
+}
