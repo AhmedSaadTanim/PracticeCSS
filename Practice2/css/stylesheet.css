@@ -134,7 +134,7 @@ body{
 
 .attribution{
     position: absolute;
-    left: 43.1%;
+    left: 41%;
     bottom: 1%;
 }
 @media only screen and (max-width: 375px){
@@ -159,6 +159,6 @@ body{
         grid-template-columns: 25% 35% 40%;
     }
     .attribution{
-        left: 15%;
+        left: 9%;
     }
 }
