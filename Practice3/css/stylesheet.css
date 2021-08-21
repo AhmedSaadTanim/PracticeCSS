@@ -1,15 +1,18 @@
 @import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
-*{
+
+* {
     box-sizing: border-box;
     border: none;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Big Shoulders Display', sans-serif;
     min-height: 100vh;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,28 +21,33 @@ body{
     min-height: 98vh;
     color: white;
 }
-.box{
+
+.box {
     min-width: 350px;
     max-width: 350px;
     height: 530px;
     padding: 3em 0em 3em 3em;
     line-height: 1.8em;
 }
-.box img{
+
+.box img {
     margin: 10px 0 0 0;
 }
-.box h1{
+
+.box h1 {
     margin: 1em 0 1em 0;
 }
-.box p{
+
+.box p {
     margin-top: 1em;
     padding-bottom: 6em;
     letter-spacing: 1px;
 }
-.box .button{
+
+.box .button {
     background-color: white;
-    border: 100px;
-    border-color: crimson;
+    box-sizing: border-box;
+    border: 1px solid white;
     border-radius: 22px;
     width: 150px;
     height: 50px;
@@ -47,54 +55,85 @@ body{
     justify-content: center;
     align-items: center;
 }
-.text1{
+
+.box .button:hover {
+    cursor: pointer;
+}
+
+.box .button:hover span {
+    color: white;
+}
+
+.text1 {
     background-color: hsl(31, 77%, 52%);
     border-radius: 12px 0 0 12px;
 }
-.text1 p{
+
+.text1 p {
     margin-right: 90px;
 }
-.text1 span{
+
+.text1 .button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.text1 span {
     color: hsl(31, 77%, 52%);
 }
-.text2{
+
+.text2 {
     background-color: hsl(184, 100%, 22%);
 }
-.text2 p{
+
+.text2 p {
     margin-right: 62px;
 }
-.text2 span{
+
+.text2 .button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.text2 span {
     color: hsl(184, 100%, 22%);
 }
-.text3{
+
+.text3 {
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 12px 12px 0;
 }
-.text3 p{
+
+.text3 p {
     margin-right: 68px;
 }
-.text3 span{
+
+.text3 .button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.text3 span {
     color: hsl(179, 100%, 13%);
 }
-.attribution{
+
+.attribution {
     width: 100%;
     margin: 0 auto;
 }
-@media only screen and (max-width: 695px){
-    .box{
+
+@media only screen and (max-width: 695px) {
+    .box {
         height: 480px;
     }
-    .box p{
-        padding-bottom: 2em;
-        margin-right: 1.8em;
-    }
-    .text1{
+
+    .text1 {
         border-radius: 12px 12px 0 0;
     }
-    .text3{
+
+    .text3 {
         border-radius: 0px 0px 12px 12px;
     }
-    .box p{
+
+    .box p {
+        padding-bottom: 2em;
         margin-right: 50px;
     }
 }
