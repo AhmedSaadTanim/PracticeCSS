@@ -1,0 +1,74 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+.box{
+    width: 350px;
+    height: 600px;
+    /* padding: 3em; */
+    line-height: 1.8em;
+}
+.box img{
+    margin: 10px 0 0 0;
+}
+.box h1{
+    margin: 1em 0 1em 0;
+}
+.box p{
+    margin-top: 1em;
+    /* margin-right: 70px; */
+}
+.box .button{
+    background-color: white;
+    border-radius: 22px;
+    width: 150px;
+    height: 50px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box span{
+    
+}
+.text1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 12px 0 0 12px;
+}
+.text1 span{
+    color: hsl(31, 77%, 52%);
+}
+.text2{
+    background-color: hsl(184, 100%, 22%);
+}
+.text2 span{
+    color: hsl(184, 100%, 22%);
+}
+.text3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 12px 12px 0;
+}
+.text3 span{
+    color: hsl(179, 100%, 13%);
+}
+.attribution{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    margin: 0 auto;
+}
