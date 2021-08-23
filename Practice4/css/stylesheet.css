@@ -2,6 +2,7 @@
     --color-dark-cyan: hsl(185, 75%, 39%);
     --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --color-dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-shadow: hsla(229, 23%, 23%, 0.705);
 }
 
 * {
@@ -27,14 +28,14 @@ body {
 
 .background .image-1 {
     position: absolute;
-    bottom: calc(55vh - 5vw);
-    right: calc(45vw + 8vw);
+    bottom: 45vh;
+    right: calc(47vw + 2vw);
 }
 
 .background .image-2 {
     position: absolute;
-    top: calc(55vh - 5vw);
-    left: calc(65vw - 10vw);
+    top: calc(40vh + 5vw);
+    left: calc(65vw - 15vw);
 }
 
 .card {
@@ -47,6 +48,7 @@ body {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 20px var(--color-shadow);
 }
 .card .card-bg{
     border-radius: 1rem 1rem 0 0;
@@ -84,19 +86,17 @@ body {
 }
 .card .user-info{
     display: grid;
+    height: 3em;
     position: relative;
     top: -9%;
     grid-row: 1fr 1fr;
     grid-column: 1fr 1fr 1fr;
     grid-template-areas:
-    
     "bx-1 bx-3 bx-5"
     "bx-2 bx-4 bx-6";
 }
-.bx-1, .bx-2, .bx-3, .bx-4, .bx-5, .bx-6{
-    /* background-color: blue; */
+.bx-1, .bx-2, .bx-3, .bx-4, .bx-5, .bx-6{ 
     text-align: center;
-    
 }
 .bx-2, .bx-4, .bx-6{
     position: relative;
@@ -138,5 +138,7 @@ body {
 }
 .attribution {
     position: absolute;
+    width: 100%;
     bottom: 1%;
+    /* margin: 0 auto; */
 }
