@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <title>Frontend Mentor | Profile card component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;500;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <main>
     <div class="container">
@@ -22,26 +34,43 @@
         <img class="image-2" alt="bg-pattern-bottom" src="./images/bg-pattern-bottom.svg">
       </div>
       <div class="card">
-
+        <div class="card-bg"></div>
+        <div class="profile-pic middle">
+          <img alt="image-victor" src="./images/image-victor.jpg">
+        </div>
+          <h1 class="middle">
+            Victor Crest <span> 26 </span>
+          </h1>
+          <span class="middle">London</span>
+        <div class="mid-border middle"></div>
+        <div class="user-info">
+          <div class="bx-1">
+            <h1>80K</h1>
+          </div>
+          <div class="bx-2">
+            <span>Followers</span>
+          </div>
+          <div class="bx-3">
+            <h1>803K</h1>
+          </div>
+          <div class="bx-4">
+            <span>Likes</span>
+          </div>
+          <div class="bx-5">
+            <h1>1.4K</h1>
+          </div>
+          <div class="bx-6">
+            <span>Photos</span>
+          </div>
+        </div>
+        </div>
       </div>
-      <!-- <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://www.frontendmentor.io/profile/AhmedSaadTanim">Ahmed Saad Tanim</a>.
-      </div> -->
+      </div>
     </div>
-  <!-- Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos -->
-  
   </main>
 </body>
+
 </html>
