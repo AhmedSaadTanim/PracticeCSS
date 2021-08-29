@@ -1,0 +1,40 @@
+:root{
+    --text-color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --text-color-soft-red: hsl(14, 88%, 65%);
+    --bg-color-soft-violet: hsl(273, 75%, 66%);
+    --bg-color-soft-blue: hsl(240, 73%, 65%);
+    --text-neutral-color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --text-neutral-color-dark-grayish-blue: hsl(240, 6%, 50%);
+    --divider-color-light-grayish-blue: hsl(240, 5%, 91%);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(var(--bg-color-soft-violet),var(--bg-color-soft-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__card{
+    height: 100vh;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0px 20px 46px -20px var(--text-color-very-dark-desaturated-blue);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    margin: 0 auto;
+}
