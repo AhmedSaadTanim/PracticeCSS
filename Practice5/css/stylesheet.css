@@ -25,13 +25,75 @@ body{
     align-items: center;
 }
 .container__card{
-    height: 100vh;
+    position: fixed;
+    min-height: 50vh;
+    min-width: 350px;
     margin: 0 auto;
     background: white;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 0px 20px 46px -20px var(--text-color-very-dark-desaturated-blue);
 }
+img{
+    max-width: 100%;
+}
+.card__pic{
+    position: absolute;
+    top: -23.5%;
+    left: 12%;
+    right: 12%;
+}
+.pic__box{
+    position: absolute;
+    max-width: 40%;
+    left: -2%;
+    bottom: 12%;
+}
+.pic__shadow{
+    position: absolute;
+    right: 0%;
+    bottom: -15%;
+}
+.card__faq{
+    position: absolute;
+    width: 100%;
+    top: 28%;
+}
+.card__faq h1{
+    text-align: center;
+}
+.card__faq p{
+    color: var(--text-neutral-color-very-dark-grayish-blue);
+    font-weight: 400;
+}
 
+.faq__QNA{
+    margin: 1rem 1.5rem;
+    padding: 0 0 1rem 0;
+    border-bottom: .1px solid var(--divider-color-light-grayish-blue);
+}
+.QNA__question{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--text-neutral-color-dark-grayish-blue);
+    font-weight: 700;
+}
+.QNA__question:hover{
+    color: orange;
+}
+.QNA__question:target .answer {
+    display: block;
+}
+.faq__QNA:target .answer {
+    display: block;
+}
+.answer{
+    display: none;
+    margin-top: .5em;
+    margin-right: 3em;
+}
 .attribution{
     position: absolute;
     bottom: 1%;
