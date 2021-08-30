@@ -25,10 +25,10 @@ body{
     align-items: center;
 }
 .container__card{
-    position: fixed;
-    min-height: 50vh;
-    min-width: 350px;
-    margin: 0 auto;
+    position: relative;
+    min-height: 55vh;
+    min-width: 300px;
+    margin: 0 50px;
     background: white;
     border-radius: 2rem;
     box-shadow: 0px 20px 46px -20px var(--text-color-very-dark-desaturated-blue);
@@ -43,10 +43,11 @@ img{
     right: 12%;
 }
 .pic__box{
+    z-index: 99;
     position: absolute;
     max-width: 40%;
-    left: -2%;
-    bottom: 12%;
+    left: -4%;
+    bottom: 39%;
 }
 .pic__shadow{
     position: absolute;
@@ -56,14 +57,14 @@ img{
 .card__faq{
     position: absolute;
     width: 100%;
-    top: 28%;
+    top: 25%;
 }
 .card__faq h1{
     text-align: center;
 }
 .card__faq p{
-    color: var(--text-neutral-color-very-dark-grayish-blue);
-    font-weight: 400;
+    color: var(--text-neutral-color-dark-grayish-blue);
+    font-weight: 700;
 }
 
 .faq__QNA{
@@ -81,10 +82,13 @@ img{
     font-weight: 700;
 }
 .QNA__question:hover{
-    color: orange;
+    color: var(--text-color-soft-red);
 }
-.QNA__question:target .answer {
-    display: block;
+.faq__QNA:target .QNA__question{
+    color: var(--text-neutral-color-very-dark-desaturated-blue);
+}
+.faq__QNA:target img{
+    transform: scaleY(-1);
 }
 .faq__QNA:target .answer {
     display: block;
@@ -99,4 +103,34 @@ img{
     bottom: 1%;
     width: 100%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 550px){
+    .container__card{
+        width: 110vmin;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow:hidden;
+    }
+    .card__pic{
+        width: 50%;
+        left: -8%;
+        top: 15%;
+    }
+    .pic__shadow{
+        right: 12%;
+        bottom: -20%;
+    }
+    .card__faq{
+        position: relative;
+        width: 50%;
+        margin-right: 5%;
+    }
+    .card__faq h1{
+        text-align: start;
+        margin-left: .8em;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
 }
