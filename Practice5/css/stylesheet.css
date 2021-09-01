@@ -85,16 +85,21 @@ img{
     color: var(--text-neutral-color-very-dark-desaturated-blue);
 }
 .faq__QNA:target img{
-    transform: scaleY(-1);
+    transition-duration: 650ms;
+    transform: rotate(180deg);
 }
 .faq__QNA:target .answer {
-    display: block;
+    transition-duration: 850ms;
+    overflow: none;
+    max-height: 100px;
 }
 .answer{
-    display: none;
+    overflow: hidden;
+    max-height: 0px;
     margin-top: .5em;
     margin-right: 3em;
 }
+
 .attribution{
     position: absolute;
     bottom: 1%;
