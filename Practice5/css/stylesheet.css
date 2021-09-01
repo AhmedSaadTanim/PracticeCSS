@@ -108,7 +108,7 @@ img{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
+        background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
         background-repeat: no-repeat no-repeat, no-repeat no-repeat;
         background-size: 50%, 85%;
         background-position: -16% 50%, -287% 50%;
