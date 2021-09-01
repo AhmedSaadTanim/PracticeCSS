@@ -38,21 +38,18 @@ img{
 }
 .card__pic{
     position: absolute;
-    top: -23.5%;
-    left: 12%;
+    top: -19%;
+    left: 5%;
     right: 12%;
 }
 .pic__box{
-    z-index: 99;
-    position: absolute;
-    max-width: 40%;
-    left: -4%;
-    bottom: 39%;
+    display: none;
 }
 .pic__shadow{
     position: absolute;
-    right: 0%;
-    bottom: -15%;
+    max-width: 75%;
+    right: 12%;
+    top: -23%;
 }
 .card__faq{
     position: absolute;
@@ -111,16 +108,21 @@ img{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        overflow:hidden;
+        background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat no-repeat, no-repeat no-repeat;
+        background-size: 50%, 85%;
+        background-position: -16% 50%, -287% 50%;
     }
-    .card__pic{
-        width: 50%;
+    .pic__shadow, .card__pic{
+        display: none;
+    }
+    .pic__box{
+        display: block;
+        z-index: 99;
+        width: 18%;
+        position: absolute; 
         left: -8%;
-        top: 15%;
-    }
-    .pic__shadow{
-        right: 12%;
-        bottom: -20%;
+        top: calc(38% + 5%);  
     }
     .card__faq{
         position: relative;
